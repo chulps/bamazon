@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon_db</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACldpdGVtX2lk0h4fLS5f
+			EA9OU011dGFibGVTdHJpbmejLS8jWE5TU3RyaW5n0h4fMTJeTlNN
+			dXRhYmxlQXJyYXmjMTMjV05TQXJyYXnSHh8iNaIiI18QD05TS2V5
+			ZWRBcmNoaXZlctE4OVRkYXRhgAEACAARABoAIwAtADIANwBFAEsA
+			UgBaAGUAbABwAHIAdAB2AHoAfAB+AIAAggCHAIwAkQC6AMEAwgDD
+			AMUAygDVAN4A9AD4AQUBDgETARUBFwEZAR4BKAEqATIBNwFJAU0B
+			VgFbAWoBbgF2AXsBfgGQAZMBmAAAAAAAAAIBAAAAAAAAADoAAAAA
+			AAAAAAAAAAAAAAGa
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {622, 783}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>CREATE DATABASE bamazon_db;
+
+USE  bamazon_db;
+
+DROP TABLE products;
+
+CREATE TABLE products (
+ item_id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ inventory INT NOT NULL,
+ PRIMARY KEY (item_id)
+ );
+ 
+INSERT INTO products (product_name, department_name, price, inventory)
+VALUES  ('Watch', 'Jewelry', 100, 10),
+ 		('TV', 'Electronics', 800, 5),
+ 		('Guitar', 'Music', 1200, 5),
+ 		('Clock', 'Electronics', 20, 100),
+ 		('XBox', 'Electronics', 200, 20),
+ 		('DVD', 'Electronics', 25, 50),
+ 		('Bike', 'Sports', 500, 10),
+ 		('Skates', 'Sports', 250, 5),
+ 		('Helmet', 'Sports', 35, 15),
+ 		('IPhone', 'Electronics', 700,48);
+ 		
+SELECT * FROM products;</string>
+			<key>table</key>
+			<string>products</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>INSERT INTO products (product_name, department_name, price, inventory)
+VALUES  ('Watch', 'Jewelry', 100, 10),
+ 		('TV', 'Electronics', 800, 5),
+ 		('Guitar', 'Music', 1200, 5),
+ 		('Clock', 'Electronics', 20, 100),
+ 		('XBox', 'Electronics', 200, 20),
+ 		('DVD', 'Electronics', 25, 50),
+ 		('Bike', 'Sports', 500, 10),
+ 		('Skates', 'Sports', 250, 5),
+ 		('Helmet', 'Sports', 35, 15),
+ 		('IPhone', 'Electronics', 700,48)</string>
+		<string>CREATE TABLE products (
+ item_id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ inventory INT NOT NULL,
+ PRIMARY KEY (item_id)
+ )</string>
+		<string>DROP TABLE products</string>
+		<string>CREATE TABLE products (
+ product_id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ inventory INT NOT NULL,
+ PRIMARY KEY (product_id)
+ )</string>
+		<string>CREATE TABLE products (
+ product_id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ inventory INT NOT NULL,
+ PRIMARY KEY (id)
+ )</string>
+		<string>INSERT INTO products (product_name, department_name, price, inventory)
+VALUES  (Watch, Jewelry, 100, 10),
+ 		(TV, Electronics, 800, 5),
+ 		(Guitar, Music, 1200, 5),
+ 		(Clock, Electronics, 20, 100),
+ 		(XBox, Electronics, 200, 20),
+ 		(DVD, Electronics, 25, 50),
+ 		(Bike, Sports, 500, 10),
+ 		(Skates, Sports, 250, 5),
+ 		(Helmet, Sports, 35, 15),
+ 		(IPhone, Electronics, 700,48)</string>
+		<string>INSERT INTO products (product_name, department_name, price, inventory)
+VALUES (Watch, Jewelry, 100, 10),
+ 		(TV, Electronics, 800, 5),
+ 		(Guitar, Music, 1200, 5),
+ 		(Clock, Electronics, 20, 100),
+ 		(XBox, Electronics, 200, 20),
+ 		(DVD, Electronics, 25, 50),
+ 		(Bike, Sports, 500, 10),
+ 		(Skates, Sports, 250, 5),
+ 		(Helmet, Sports, 35, 15),
+ 		(IPhone, Electronics, 700,48)</string>
+		<string>CREATE TABLE products (
+ id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ inventory INT NOT NULL,
+ PRIMARY KEY (id)
+ )</string>
+		<string>CREATE TABLE products (
+ id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ department_name varchar (15) NOT NULL,
+ price INT NOT NULL,
+ stock INT NOT NULL,
+ PRIMARY KEY (id)
+ )</string>
+		<string>INSTERT INTO products (product_name, department_name, price, inventory)
+ VALUES (Watch, Jewelry, 100, 10),
+ 		(TV, Electronics, 800, 5),
+ 		(Guitar, Music, 1200, 5),
+ 		(Clock, Electronics, 20, 100),
+ 		(XBox, Electronics, 200, 20),
+ 		(DVD, Electronics, 25, 50),
+ 		(Bike, Sports, 500, 10),
+ 		(Skates, Sports, 250, 5),
+ 		(Helmet, Sports, 35, 15),
+ 		(IPhone, Electronics, 700,48)</string>
+		<string>CREATE TABLE products (
+ id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ DEPARTMENT varchar (15) NOT NULL,
+ price INT NOT NULL,
+ stock INT NOT NULL,
+ PRIMARY KEY (id)
+ )</string>
+		<string>CREATE TABLE products (
+ id INT NOT NULL AUTO_INCREMENT,
+ product_name VARCHAR (10) NOT NULL,
+ DEPARTMENT varchar (15) NOT NULL
+ price INT NOT NULL
+ stock INT NOT NULL
+ PRIMARY KEY (id)
+ )</string>
+		<string>USE  bamazon_db</string>
+		<string>CREATE DATABASE bamazon_db</string>
+		<string>select (*) bands</string>
+		<string>select * bands</string>
+		<string>describe table items</string>
+		<string>INSERT INTO items (post, starting_price, highest_bid)
+VALUES ("trumpet", 100, 1)</string>
+		<string>INSERT INTO items (post, starting_price, highest_bid),
+VALUES ("trumpet", 100, 1)</string>
+		<string>INSERT INTO items (post, starting_price, highest_bid),
+VALUES ("trumpet", 100, 0,)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.21</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
